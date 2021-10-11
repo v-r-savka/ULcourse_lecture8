@@ -1,0 +1,313 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+   outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+@media print {
+   .heading__nav {
+      border-style: solid;
+      border-width: 2px;
+   }
+
+   .content__intro{
+      border-style: solid;
+      border-width: 2px;
+   }
+
+   .text__paragraph {
+      border-style: solid;
+      border-width: 2px;
+   }
+
+   .text__remark {
+      border-style: solid;
+      border-width: 2px;
+   }
+
+   .pictures {
+      border-style: solid;
+      border-width: 2px;
+   }
+
+   .content__footer {
+      border-style: solid;
+      border-width: 2px;
+      border-color: black;
+   }
+}
+
+
+
+
+.heading__nav{
+   position: fixed;
+   background-color: coral;
+   width: 100%;
+   height: 2.5em;
+   display: flex;
+   flex-grow: 1;
+   flex-wrap: wrap;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.nav__list {
+   width: 100%;
+   display: contents;
+}
+
+.list__item {
+   color: brown;
+   text-decoration: none;
+}
+
+.content__intro {
+   width: 100%;
+   padding: 6em 0;
+   background-image: url(images/intro-1.jfif);
+   background-size: auto;
+   display: inline-flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.intro__title {
+   color: gold;
+   font-size: 1.3em;
+
+}
+
+.intro__subtitle{
+   width: 80%;
+   margin-top: 2em;
+}
+
+.content__text {
+   background-color: lightgrey;
+   display: flex;
+   flex-direction: column;
+   align-items: center
+}
+
+.text__remark {
+   background-color: green;
+   width: 80%;
+   padding: 1em;
+}
+
+.text__paragraph {
+   width: 80%;
+   margin: 2em;
+}
+
+.pictures {
+   display: flex;
+   flex-direction: column;
+}
+
+.pictures__figure-0 {
+   margin: 0;
+   padding: 0;
+}
+
+.pictures__figure-1 {
+   margin: 0;
+   padding: 0;
+}
+
+
+.content__footer {
+   background-color: darkslategray;
+   color: white;
+   padding: 2em;
+}
+
+
+
+
+
+@media (min-width: 480px) {
+   .heading__nav {
+      height: 3em;
+      justify-content:flex-start;
+      background-color: tomato;
+   }
+
+   .list__item {
+      margin-right: 2em;
+      margin-left: 1em;
+      color: white;
+   }
+
+   .content__intro {
+      background-image: url(images/intro-2.jfif);
+   }
+
+   .intro__title {
+      color: yellow;
+      font-size: 2em;
+   }
+
+   .intro__subtitle {
+      color: whitesmoke;
+   }
+
+   .content__text {
+      background-color: lightblue;
+      flex-direction: row;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      align-items: unset;
+   }
+
+   .text__paragraph {
+      width: 60%;
+      padding: 0 0 0 1em;
+      margin: 1em;
+   }
+
+   .text__remark {
+      background-color: lightgreen;
+      width: 20%;
+      margin: auto;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      display: inline;
+   }
+
+
+   .pictures {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .figure-0__image {
+      width: 390px;
+   }
+
+   .figure-1__image {
+      width: 390px;
+   }
+
+   .content__footer {
+      margin: 0;
+      background-color: grey;
+      color: rgb(15, 14, 14);
+   }
+}
+
+
+
+
+
+@media (min-width: 760px) {
+   .heading__nav {
+      height: 3.3em;
+      justify-content:center;
+      background-color: LightSalmon;
+      
+   }
+
+   .list__item {
+      margin: 0 4em;
+      color: darkred;
+   }
+
+   .content__intro {
+      background-image: url(images/landscape-4.jfif);
+      background-position: center;
+   }
+
+   .intro__title {
+      font-size: 3em;
+      color: chartreuse;
+   }
+
+   .intro__subtitle {
+      font-size: 1.5em;
+      font-style: italic;
+   }
+
+   .content__text {
+      background-color: cornflowerblue;
+      align-content: center;
+      justify-content: center;
+   }
+
+   .text__paragraph {
+      font-size: 1.2em;
+      width: 55%;
+      padding: 1em;
+   }
+
+   .text__remark {
+      background-color: forestgreen;
+      font-size: 1.2em;
+   }
+
+   .pictures {
+      flex-direction: row;
+   }
+
+   .figure-0__image {
+      width: 350px;
+   }
+
+   .figure-1__image {
+      width: 350px;
+   }
+
+   .content__footer {
+      background-color: SandyBrown;
+   }
+}
