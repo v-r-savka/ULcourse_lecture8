@@ -20,7 +20,9 @@
 
    <header class="heading">
       <nav class="heading__nav">
+         <!-- 1. Wrong class, should have been 'heading__nav-list' instead of 'nav__list' -->
          <ul class="nav__list">
+            <!-- 2. 'heading__nav-list-item' instead of 'list__item' -->
             <li><a class="list__item" id="Logo" href="#">LOGO</a></li>
             <li><a class="list__item" href="#">Portfolio</a></li>
             <li><a class="list__item" href="#">Contact</a></li>
@@ -29,13 +31,17 @@
       </nav>
    </header>
    <article class="content">
+      <!-- 3. I would better name as 'content__intro-section' to bring more clarity -->
       <section class="content__intro">
+         <!-- 4. 'content__intro-section-title' instead of 'intro__title' -->
          <h1 class="intro__title">Lorem ipsum dolor sit amet.</h1>
+         <!-- 5. 'content__intro-section-subtitle' instead of 'intro__subtitle' -->
          <p class="intro__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti veritatis esse
             nisi
             eos dolorem et doloremque nihil, laborum eaque voluptatum alias, temporibus, ullam est! Incidunt, voluptas
             aliquam tempore recusandae perferendis sequi cum, deleniti .</p>
       </section>
+      <!-- 6. For all classes below, please read the documentation again and based on both my comments and docs fix all those BEM-related mistakes -->
       <section class="content__text">
          <p class="text__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt maiores optio
             deserunt, atque cum vero porro
